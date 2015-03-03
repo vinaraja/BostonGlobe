@@ -74,7 +74,7 @@ var app = connect()
 		}
 		
 			if(uri === "/student"){
-				var request = http.request("http://rss.cnn.com/rss/cnn_studentnews.rss", function (res) {
+				var request = http.request("http://rss.cnn.com/rss/cnn_us.rss", function (res) {
 				var data = '';
 				res.on('data', function (chunk) {
 				   data += chunk;
@@ -135,6 +135,36 @@ var app = connect()
 		
 			if(uri === "/entertainment"){
 				var request = http.request("http://rss.cnn.com/rss/cnn_showbiz.rss", function (res) {
+				var data = '';
+				res.on('data', function (chunk) {
+				   data += chunk;
+					//var title=chunk.rss.title;
+					//console.log(title);
+				});
+				res.on('end', function () {
+					response.writeHead(200, {"Content-Type": "text/plain"});
+       				 response.end(data);
+					//console.log(data);
+					/**var outputFilename = '\my.xml';
+			
+						fs.writeFile(outputFilename, data, function(err) {
+							if(err) {
+							  console.log(err);
+							} else {
+							  console.log("JSON saved to " + outputFilename);
+							}
+						})**/
+			
+				});
+			});
+			request.on('error', function (e) {
+				console.log(e.message);
+			});
+			request.end();
+		}
+		
+		if(uri === "/travel"){
+				var request = http.request("http://rss.cnn.com/rss/cnn_travel.rss", function (res) {
 				var data = '';
 				res.on('data', function (chunk) {
 				   data += chunk;
