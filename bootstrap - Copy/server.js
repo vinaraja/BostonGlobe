@@ -163,7 +163,7 @@ var app = connect()
 			request.end();
 		}
 		
-		if(uri === "/travel"){
+		/**if(uri === "/travel"){
 				var request = http.request("http://rss.cnn.com/rss/cnn_travel.rss", function (res) {
 				var data = '';
 				res.on('data', function (chunk) {
@@ -175,7 +175,37 @@ var app = connect()
 					response.writeHead(200, {"Content-Type": "text/plain"});
        				 response.end(data);
 					//console.log(data);
-					/**var outputFilename = '\my.xml';
+					var outputFilename = '\my.xml';
+			
+						fs.writeFile(outputFilename, data, function(err) {
+							if(err) {
+							  console.log(err);
+							} else {
+							  console.log("JSON saved to " + outputFilename);
+							}
+						})
+			
+				});
+			});
+			request.on('error', function (e) {
+				console.log(e.message);
+			});
+			request.end();
+		}**/
+		
+		if(uri === "/travel"){
+				var request = http.request("http://www.bostonglobe.com/rss/bigpicture", function (res) {
+				var data = '';
+				res.on('data', function (chunk) {
+				   data += chunk;
+					//var title=chunk.rss.title;
+					//console.log(title);
+				});
+				res.on('end', function () {
+					response.writeHead(200, {"Content-Type": "text/plain"});
+       				 response.end(data);
+					//console.log(data);
+					/**var outputFilename = '\my1.xml';
 			
 						fs.writeFile(outputFilename, data, function(err) {
 							if(err) {
