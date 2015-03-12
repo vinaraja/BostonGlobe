@@ -43,7 +43,6 @@
   <div class="container-fluid" >
        <div class="row" >
         <div class="col-md-2" style="height:80px; padding-top:20px; padding-bottom:20px; padding-left:25px; padding-right:2px; " >
-        <img src="img/free-vector-cnn-logo_092046_CNN_logo.png" style="height:40px; "> </img>
         </div>
         <div class="col-md-3"></div>
                 <div class="col-md-3">
@@ -77,7 +76,7 @@
     		<div class="panel ">
             	<div class="panel-body">
                     <div class="media" >
-                          <div id="test1" class="media-left" style="border:1px solid">
+                          <div id="test1" class="media-left" >
                             
                           </div>
                           <br>
@@ -98,7 +97,7 @@
     		<div class="panel panel-primary">
             	<div class="panel-body">
                     <div class="media" >
-                          <div  id="test2" class="media-left" style="border:1px solid">
+                          <div  id="test2" class="media-left" >
                           </div>
                           <br>
                           <div class="media-body">
@@ -167,6 +166,90 @@
                                   <div class="media-body">
                                      <h1 id="World5" class="media-heading"></h1>
                                     <h1 id="text4"></text>
+                                  </div>
+                            </div>
+                          </div>
+                  </div>
+			</div>
+          </div>
+       </div>
+       
+       <div class="item">
+       <div class="row">    
+			<div class="col-md-12">
+            	<div class="panel panel-primary">
+                        <div class="panel-body">
+                            <div class="media">
+                                  <div id="test7" class="media-left">
+                                    
+                                  </div>
+                                  <br>
+                                  <div class="media-body">
+                                     <h1 id="World7" class="media-heading"></h1>
+                                    <h1 id="text6"></text>
+                                  </div>
+                            </div>
+                          </div>
+                  </div>
+			</div>
+          </div>
+       </div>
+       
+       <div class="item">
+       <div class="row">    
+			<div class="col-md-12">
+            	<div class="panel panel-primary">
+                        <div class="panel-body">
+                            <div class="media">
+                                  <div id="test8" class="media-left">
+                                    
+                                  </div>
+                                  <br>
+                                  <div class="media-body">
+                                     <h1 id="World8" class="media-heading"></h1>
+                                    <h1 id="text7"></text>
+                                  </div>
+                            </div>
+                          </div>
+                  </div>
+			</div>
+          </div>
+       </div>
+       
+       <div class="item">
+       <div class="row">    
+			<div class="col-md-12">
+            	<div class="panel panel-primary">
+                        <div class="panel-body">
+                            <div class="media">
+                                  <div id="test9" class="media-left">
+                                    
+                                  </div>
+                                  <br>
+                                  <div class="media-body">
+                                     <h1 id="World9" class="media-heading"></h1>
+                                    <h1 id="text8"></text>
+                                  </div>
+                            </div>
+                          </div>
+                  </div>
+			</div>
+          </div>
+       </div>
+       
+       <div class="item">
+       <div class="row">    
+			<div class="col-md-12">
+            	<div class="panel panel-primary">
+                        <div class="panel-body">
+                            <div class="media">
+                                  <div id="test10" class="media-left">
+                                    
+                                  </div>
+                                  <br>
+                                  <div class="media-body">
+                                     <h1 id="World10" class="media-heading"></h1>
+                                    <h1 id="text9"></text>
                                   </div>
                             </div>
                           </div>
@@ -368,10 +451,10 @@
 						 var p=img.split("<img src=");
 						 //img = img.replace("<!\[CDATA\[", "").replace("\]\]>", "");
 						 
-						 for(i=1;i<6;i++)
+						 for(i=1;i<11;i++)
 						 {
 						 var split1=p[i].split("><");
-						 $('#test'+i).html("<img src='"+split1[0] +"'\>")
+						 $('#test'+i).html("<img width='100%' src='"+split1[0] +"'\>")
 						 }
 						 
 						
@@ -383,7 +466,7 @@
 						 }**/
 						 //dsr= dsr.substring(dsr.indexOf('>'), dsr.length);
 						 //console.log(dsr);
-						for (i=0;i<6;i++)
+						for (i=0;i<11;i++)
 						{
 						var s=xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue;
 						var q=xmlDoc.getElementsByTagName("description")[i+1].childNodes[0].nodeValue;
