@@ -26,15 +26,15 @@
 		padding-right: 50px;
 		padding-bottom: 5px;
 		padding-left: 50px;
-	 background: -webkit-linear-gradient( #DDD, #EEE); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( #DDD, #EEE); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient( #DDD, #EEE); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( #DDD, #EEE); /* Standard syntax (must be last) */
+	 background: -webkit-linear-gradient( #000, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #000, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #000, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #000, #000); /* Standard syntax (must be last) */
 	}
 	.container-fluid{
 		height:80px;
 		color:white;
-		background-color:#800;
+		background-color:#000;
 	}
 </style>
   </head>
@@ -42,15 +42,17 @@
   
   <div class="container-fluid" >
        <div class="row" >
-        <div class="col-md-2" style="height:80px; padding-top:20px; padding-bottom:20px; padding-left:25px; padding-right:2px; " >
+        <div class="col-md-1" >
         </div>
-        <div class="col-md-3"></div>
-                <div class="col-md-3">
+        <div class="col-md-3">
+        </div>
+                <div class="col-md-5">
                         <div class="navbar-header">
-                        <h1 style="color:#FFF;font-family:cal;" >Live News feed</h1>
+                        <h1 style="font-family: 'Arial Black', Gadget, sans-serif; color:#FFF">The Boston Globe<h1>
+  
                         </div>
                 </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
     <br>
@@ -60,8 +62,8 @@
   
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="25000">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  <ol class="carousel-indicators" hidden="true">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
@@ -73,7 +75,7 @@
     <div class="item active">
     <div class="row" >
     <div class="col-md-12">
-    		<div class="panel ">
+    		<div class="panel" style="background-color:#000">
             	<div class="panel-body">
                     <div class="media" >
                           <div id="test1" class="media-left" >
@@ -81,8 +83,9 @@
                           </div>
                           <br>
                           <div class="media-body">
-                             <h1 id="World1" class="media-heading"></h1>
-                                    <h1 id="text0"></text>
+                             <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World1" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date0"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text0"></h3>
                           </div>
                     </div>
                  </div>
@@ -94,15 +97,16 @@
          <div class="item ">
 	    <div class="row" >
     <div class="col-md-12">
-    		<div class="panel panel-primary">
+    		<div class="panel" style="background-color:#000">
             	<div class="panel-body">
                     <div class="media" >
                           <div  id="test2" class="media-left" >
                           </div>
                           <br>
                           <div class="media-body">
-                          <h1 id="World2" class="media-heading"></h1>
-                                    <h1 id="text1"></text>
+                          <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World2" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date1"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text1"></text>
                           </div>
                     </div>
                  </div>
@@ -114,7 +118,7 @@
     <div class="item">
     	<div class="row">    
 			<div class="col-md-12">
-            	<div class="panel panel-primary">
+            	<div class="panel" style="background-color:#000">
                         <div class="panel-body">
                             <div class="media">
                                   <div id="test3" class="media-left">
@@ -122,8 +126,9 @@
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                   <h1 id="World3" class="media-heading"></h1>
-                                    <h1 id="text2"></text>
+                                   <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World3" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date2"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text2"></text>
                                   </div>
                             </div>
                           </div>
@@ -135,7 +140,7 @@
       <div class="item"> 
           <div class="row">
 			<div class="col-md-12">
-                <div class="panel panel-primary">
+                <div class="panel" style="background-color:#000">
                             <div class="panel-body">
                                     <div class="media">
                                   <div id="test4" class="media-left">
@@ -143,8 +148,9 @@
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                    <h1 id="World4" class="media-heading"></h1>
-                                    <h1 id="text3"></text>
+                                    <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World4" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date3"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text3"></text>
                                   </div>
                             </div>
                           </div>
@@ -156,7 +162,7 @@
     <div class="item">
        <div class="row">    
 			<div class="col-md-12">
-            	<div class="panel panel-primary">
+            	<div class="panel" style="background-color:#000">
                         <div class="panel-body">
                             <div class="media">
                                   <div id="test5" class="media-left">
@@ -164,8 +170,9 @@
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                     <h1 id="World5" class="media-heading"></h1>
-                                    <h1 id="text4"></text>
+                                     <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World5" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date4"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text4"></text>
                                   </div>
                             </div>
                           </div>
@@ -177,7 +184,29 @@
        <div class="item">
        <div class="row">    
 			<div class="col-md-12">
-            	<div class="panel panel-primary">
+            	<div class="panel" style="background-color:#000">
+                        <div class="panel-body">
+                            <div class="media">
+                                  <div id="test6" class="media-left">
+                                    
+                                  </div>
+                                  <br>
+                                  <div class="media-body">
+                                     <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World6" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date5"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text5"></text>
+                                  </div>
+                            </div>
+                          </div>
+                  </div>
+			</div>
+          </div>
+       </div>
+       
+       <div class="item">
+       <div class="row">    
+			<div class="col-md-12">
+            	<div class="panel" style="background-color:#000">
                         <div class="panel-body">
                             <div class="media">
                                   <div id="test7" class="media-left">
@@ -185,8 +214,9 @@
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                     <h1 id="World7" class="media-heading"></h1>
-                                    <h1 id="text6"></text>
+                                     <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World7" class="media-heading"></h1>
+                                   <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date6"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text6"></text>
                                   </div>
                             </div>
                           </div>
@@ -198,7 +228,7 @@
        <div class="item">
        <div class="row">    
 			<div class="col-md-12">
-            	<div class="panel panel-primary">
+            	<div class="panel" style="background-color:#000">
                         <div class="panel-body">
                             <div class="media">
                                   <div id="test8" class="media-left">
@@ -206,8 +236,9 @@
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                     <h1 id="World8" class="media-heading"></h1>
-                                    <h1 id="text7"></text>
+                                     <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World8" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date7"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text7"></text>
                                   </div>
                             </div>
                           </div>
@@ -219,7 +250,7 @@
        <div class="item">
        <div class="row">    
 			<div class="col-md-12">
-            	<div class="panel panel-primary">
+            	<div class="panel" style="background-color:#000">
                         <div class="panel-body">
                             <div class="media">
                                   <div id="test9" class="media-left">
@@ -227,29 +258,9 @@
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                     <h1 id="World9" class="media-heading"></h1>
-                                    <h1 id="text8"></text>
-                                  </div>
-                            </div>
-                          </div>
-                  </div>
-			</div>
-          </div>
-       </div>
-       
-       <div class="item">
-       <div class="row">    
-			<div class="col-md-12">
-            	<div class="panel panel-primary">
-                        <div class="panel-body">
-                            <div class="media">
-                                  <div id="test10" class="media-left">
-                                    
-                                  </div>
-                                  <br>
-                                  <div class="media-body">
-                                     <h1 id="World10" class="media-heading"></h1>
-                                    <h1 id="text9"></text>
+                                     <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World9" class="media-heading"></h1>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date8"></h3>
+                                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text8"></text>
                                   </div>
                             </div>
                           </div>
@@ -261,15 +272,17 @@
      <div class="item">
           <div class="row">
 			<div class="col-md-12">
-                <div class="panel panel-primary">
+                <div class="panel " style="background-color:#000">
                             <div class="panel-body">
                                     <div class="media">
-                                  <div id="test6" class="media-left">
+                                  <div id="test10" class="media-left">
                                    
                                   </div>
                                   <br>
                                   <div class="media-body">
-                                   <h1 id="text5"></text>
+                                  <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#FFF" id="World10" class="media-heading"></h1>
+                                   <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="date9"></h3>
+                                   <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;color:#FFF " id="text9"></text>
                                   </div>
                             </div>
                           </div>
@@ -317,7 +330,7 @@
 				var url2 = "http://localhost:3600/student";
 				var url3 = "http://localhost:3600/health";
 				var url4 = "http://localhost:3600/entertainment";
-				var url5 = "http://149.160.190.240:3600/travel";
+				var url5 = "http://localhost:3600/travel";
 				
 				console.log("calling url");
 				
@@ -470,11 +483,13 @@
 						{
 						var s=xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue;
 						var q=xmlDoc.getElementsByTagName("description")[i+1].childNodes[0].nodeValue;
+						var date=xmlDoc.getElementsByTagName("pubDate")[i].childNodes[0].nodeValue;
 						var l=q.split("<");
 						
-						
+						console.log(date);
 						$('#World'+i).text(s);
 						$('#text'+i).text(l[0]);
+						$('#date'+i).text(date);
 						}
 						 
            			}
